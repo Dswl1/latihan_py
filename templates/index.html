@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabut Aje</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-semibold text-gray-900">MySite</div>
+            <ul class="flex space-x-8">
+                <li><a href="/" class="text-gray-600 hover:text-primary-500 transition-colors">Beranda</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-primary-500 transition-colors">Tentang</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-primary-500 transition-colors">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-br from-primary-50 to-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Selamat Datang di WebGue</h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Stop Yapping!! Cobain Aja klik fitur dibawah</p>
+              <div class="grid grid-cols-4 gap-4">
+                <a href="/aritmatika" class="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 transition-colors">Aritmatika</a>
+                <a href="#" class="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 transition-colors">Kamus</a>
+                <a href="#" class="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 transition-colors">To do list</a>
+                <a href="#" class="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 transition-colors">Kasir</a>
+              </div>
+        </div>
+    </section>
+
+    {%block aritmatika%}
+    {%endblock %}
+
+    <!-- Features Section -->
+    <!-- <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Fitur Utama</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Mudah Digunakan</h3>
+                    <p class="text-gray-600">Antarmuka yang intuitif untuk semua pengguna.</p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Aman dan Terpercaya</h3>
+                    <p class="text-gray-600">Keamanan data yang dijamin dengan enkripsi modern.</p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Dukungan 24/7</h3>
+                    <p class="text-gray-600">Tim kami siap membantu kapan saja.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <!-- <footer id="contact" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 MySite. Semua hak cipta dilindungi.</p>
+            <p class="mt-2 text-gray-400">Hubungi kami di: info@mysite.com</p>
+        </div>
+    </footer> -->
+
+</body>
+</html>

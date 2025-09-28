@@ -1,0 +1,62 @@
+{% extends 'index.html' %}
+
+{% block aritmatika %}
+<div class="flex grid-cols-4 gap-6 justify-center">
+  <div class="bg-white p-6 rounded-xl shadow-md w-96 text-center">
+    <h1 class="text-xl font-bold mb-4">Kalkulator Sederhana</h1>
+    
+    <form method="POST" class="space-y-3">
+      <input type="hidden" name="form_name" value="kalkulator">
+      <input type="number" step="any" name="angka1" placeholder="Angka pertama"
+             class="border rounded p-2 w-full">
+      <input type="number" step="any" name="angka2" placeholder="Angka kedua"
+             class="border rounded p-2 w-full">
+      <select name="operasi" class="border rounded p-2 w-full">
+        <option value="+">Tambah (+)</option>
+        <option value="-">Kurang (-)</option>
+        <option value="*">Kali (x)</option>
+        <option value="/">Bagi (÷)</option>
+        <option value="**">Pangkat (^)</option>
+        <option value="%">Modulus (%)</option>
+        <option value="//">Floor Division (//)</option>
+      </select>
+      <button type="submit" 
+              class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded w-full">
+        Hitung
+      </button>
+    </form>
+    {% if hasil_kalkulator is not none %}
+      <p class="mt-4 text-green-600 font-semibold">Hasil: {{ hasil_kalkulator }}</p>
+    {% endif %}
+  </div>
+  
+  <div class="bg-white p-6 rounded-xl shadow-md w-96 text-center">
+    <h1 class="text-xl font-bold mb-4">Penghitung Suhu</h1>
+  
+    <form method="POST" class="space-y-3"">
+      <input type="hidden" value="suhu" name="form_name">
+      <input type="number" step="any" name="angka" placeholder="Angka suhu (derajat)"
+             class="border rounded p-2 w-full">
+      <select name="operasi1" class="border rounded p-2 w-full">
+        <option value="celcius">Celcius (c)</option>
+        <option value="fahrenheit">fahrenheit (f)</option>
+        <option value="reamur">Reamur (r)</option>
+        <option value="kelvin">Kelvin (k)</option>
+      </select>
+      <select name="operasi2" class="border rounded p-2 w-full">
+        <option value="celcius">Celcius (c)</option>
+        <option value="fahrenheit">fahrenheit (f)</option>
+        <option value="reamur">Reamur (r)</option>
+        <option value="kelvin">Kelvin (k)</option>
+      </select>
+      <button type="submit" 
+              class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded w-full">
+        Hitung
+      </button>
+    </form>
+    {% if hasil_suhu is not none %}
+      <p class="mt-4 text-green-600 font-semibold">Hasil: {{ hasil_suhu }}</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
